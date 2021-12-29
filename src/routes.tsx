@@ -18,7 +18,7 @@ export const MyRoutes = () => {
         const reducedRoutes: IMainRoute[] = Object.keys(routes).reduce((acc: IMainRoute[], cur) => {
           return [...acc, routes[cur]].flat();
         }, []);
-        return setRoutes(reducedRoutes)
+        return setRoutes(reducedRoutes);
       }
       return undefined;
     })();
@@ -32,5 +32,5 @@ export const MyRoutes = () => {
         ))}
       </Routes>
     </div>
-  )
-}
+  );
+};

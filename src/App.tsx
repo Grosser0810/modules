@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { MyRoutes } from './routes';
+
 import './App.css';
 
 function App() {
