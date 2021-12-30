@@ -22,4 +22,5 @@ const lightTheme: Theme = createTheme({
   zIndex,
   components: overrideMap(light),
 });
+
 export default lightTheme;

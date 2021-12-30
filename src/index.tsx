@@ -8,7 +8,7 @@ import App from './App';
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={lightTheme}>
-    {/*  <CssBaseline />*/}
+      <CssBaseline />
       <App />
     </ThemeProvider>
   </React.StrictMode>,
