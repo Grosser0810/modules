@@ -25,4 +25,5 @@ const darkTheme: Theme = responsiveFontSizes(
     components: overrideMap(dark),
   })
 );
+
 export default darkTheme;

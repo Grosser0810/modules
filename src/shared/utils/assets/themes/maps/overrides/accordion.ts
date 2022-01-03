@@ -1,4 +1,6 @@
-export const accordionStyles = (themePalette: any) => ({
+import { IPalette } from '../../../../interfaces';
+
+export const accordionStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     //   root: {
     //     borderRadius: '1px !important',

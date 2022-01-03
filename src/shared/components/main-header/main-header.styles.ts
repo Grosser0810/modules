@@ -1,9 +1,11 @@
 import { makeStyles, createStyles } from '@mui/styles';
 import { Theme } from '@mui/material';
+import { ITheme } from '../../utils/interfaces/theme';
 
-export const useStyles = makeStyles((theme: Theme) =>
+export const useStyles = makeStyles((theme: ITheme) =>
   createStyles({
-    wrapper: {
+    headerWrapper: {
+      padding: '2rem',
       backgroundColor: theme.palette.background.default
     }
   })

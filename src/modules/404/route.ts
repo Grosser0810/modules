@@ -1,4 +1,4 @@
-import { IMainRoute } from '../../shared/utils/interfaces/route';
+import { IMainRoute } from '../../shared/utils';
 import { lazy } from 'react';
 
 const lazy404 = lazy(() => import('./404.module'));

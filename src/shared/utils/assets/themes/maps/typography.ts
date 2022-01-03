@@ -12,7 +12,7 @@ export const typography: TypographyOptions = {
   h1: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 600,
-    fontSize: '5rem',
+    fontSize: '4.8rem',
     lineHeight: 1.167,
     letterSpacing: '-0.01562em',
   },

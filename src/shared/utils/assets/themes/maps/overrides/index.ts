@@ -11,8 +11,9 @@ import { backdropStyles } from './backdrop';
 import { paperStyles } from './paper';
 import { dialogStyles } from './dialog';
 import { accordionStyles } from './accordion';
+import { IPalette } from '../../../../interfaces';
 
-export const overrideMap = (themePalette: any) => ({
+export const overrideMap = (themePalette: IPalette) => ({
   MuiButton: buttonStyles(themePalette),
   MuiMenu: menuStyles(themePalette),
   MuiMenuItem: menuItemStyles(themePalette),

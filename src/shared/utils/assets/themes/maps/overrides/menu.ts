@@ -1,7 +1,8 @@
 import { shape } from '../shape';
 import { shadows } from '../shadows';
+import { IPalette } from '../../../../interfaces';
 
-export const menuStyles = (themePalette: any) => ({
+export const menuStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     root: {
       boxShadow: 'none',
@@ -9,7 +10,7 @@ export const menuStyles = (themePalette: any) => ({
     paper: {
       boxShadow: `${shadows[1]} !important`,
       borderRadius: shape.borderRadius,
-      border: `2px solid ${themePalette.action?.hover}`,
+      border: `2px solid ${themePalette.action.hover}`,
     },
     list: {
       boxShadow: 'none',

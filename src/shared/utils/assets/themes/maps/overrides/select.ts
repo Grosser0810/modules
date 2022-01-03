@@ -1,4 +1,6 @@
-export const selectStyles = (themePalette: any) => ({
+import { IPalette } from '../../../../interfaces';
+
+export const selectStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     outlined: {
       '&.MuiInputBase-inputAdornedStart': {

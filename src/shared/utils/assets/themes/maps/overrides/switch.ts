@@ -1,4 +1,6 @@
-export const switchStyles = (themePalette: any) => ({
+import { IPalette } from '../../../../interfaces';
+
+export const switchStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     root: {
       padding: '2px',
@@ -28,7 +30,7 @@ export const switchStyles = (themePalette: any) => ({
     switchBase: {
       padding: 5,
       '&:hover': {
-        backgroundColor: 'transparent !important',
+        backgroundColor: 'transparent',
       },
       '&.Mui-checked': {
         transform: 'translateX(1.6rem)',
@@ -37,8 +39,8 @@ export const switchStyles = (themePalette: any) => ({
     track: {
       height: '2rem',
       width: '3.6rem',
-      borderRadius: 4,
-      backgroundColor: `${themePalette?.action?.disabledBackground}`,
+      borderRadius: '1rem',
+      backgroundColor: themePalette.action.disabledBackground,
       '&': {
         position: 'relative',
       },
@@ -47,10 +49,10 @@ export const switchStyles = (themePalette: any) => ({
         position: 'absolute',
         top: '50%',
         left: 7,
-        background: themePalette?.secondary?.contrastText,
+        background: themePalette.secondary.contrastText,
         width: 1,
         height: 7,
-        color: themePalette?.secondary?.contrastText,
+        color: themePalette.secondary.contrastText,
         transform: 'translateY(-50%)',
       },
       '&::after': {
@@ -78,29 +80,30 @@ export const switchStyles = (themePalette: any) => ({
       '.MuiSwitch-sizeSmall &': { height: '1.6rem', width: '2.8rem' },
       ':not(.Mui-checked).MuiSwitch-colorPrimary + &': {
         opacity: 1.0,
-        backgroundColor: `${themePalette?.action?.disabledBackground}`,
+        // backgroundColor: `${themePalette?.action?.disabledBackground}`,
+        backgroundColor: themePalette.action.disabledBackground,
       },
       '.Mui-checked.MuiSwitch-colorPrimary + &': {
         opacity: 1.0,
-        backgroundColor: themePalette?.primary?.main,
+        backgroundColor: themePalette.primary.main,
       },
       '.Mui-checked.MuiSwitch-colorSecondary + &': {
         opacity: 1.0,
-        backgroundColor: themePalette?.primary?.dark,
+        backgroundColor: themePalette.primary.dark,
       },
       ':not(.Mui-checked).MuiSwitch-colorSecondary + &': {
         opacity: 1.0,
-        backgroundColor: `${themePalette?.action?.disabledBackground}`,
+        backgroundColor: themePalette.action.disabledBackground,
       },
       '.Mui-disabled + &&': {
-        backgroundColor: `${themePalette?.action?.disabledBackground}`,
+        backgroundColor: themePalette.action.disabledBackground,
       },
     },
     thumb: {
       padding: 0,
       height: '1.4rem',
       width: '1.4rem',
-      borderRadius: '4px',
+      borderRadius: '50%',
       backgroundColor: '#fff',
       boxShadow: 'none',
     },

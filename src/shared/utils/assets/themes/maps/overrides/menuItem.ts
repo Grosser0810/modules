@@ -1,4 +1,6 @@
-export const menuItemStyles = (themePalette: any) => ({
+import { IPalette } from '../../../../interfaces';
+
+export const menuItemStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     root: {
       '&.Mui-selected': {
@@ -7,14 +9,14 @@ export const menuItemStyles = (themePalette: any) => ({
           background: '#fff',
         },
         '&:hover': {
-          backgroundColor: themePalette.action?.hover,
+          backgroundColor: themePalette.action.hover,
         },
       },
       '&:focus': {
         backgroundColor: '#fff',
       },
       '&:hover': {
-        backgroundColor: themePalette.action?.hover,
+        backgroundColor: themePalette.action.hover,
       },
       boxShadow: 'none',
       height: '3.6rem',

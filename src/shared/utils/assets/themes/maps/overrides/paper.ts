@@ -1,6 +1,7 @@
 import { shadows } from '../shadows';
+import { IPalette } from '../../../../interfaces';
 
-export const paperStyles = (themePalette: any) => ({
+export const paperStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     root: {
       // boxShadow: 'none',

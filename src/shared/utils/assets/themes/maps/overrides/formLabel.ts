@@ -1,7 +1,9 @@
-export const formLabelStyles = (themePalette: any) => ({
+import { IPalette } from '../../../../interfaces';
+
+export const formLabelStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     root: {
-      color: themePalette.textColor?.primary,
+      color: themePalette.primary.dark,
     },
   },
 });

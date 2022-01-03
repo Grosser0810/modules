@@ -1,10 +1,13 @@
-export const tooltipStyles = (themePalette: any) => ({
+import { IPalette } from '../../../../interfaces';
+
+export const tooltipStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     tooltip: {
-      backgroundColor: '#090909',
+      backgroundColor: themePalette.grey[900],
+      borderRadius: '0.5rem',
     },
     arrow: {
-      color: '#090909',
+      color: themePalette.grey[900],
     },
   },
 });
