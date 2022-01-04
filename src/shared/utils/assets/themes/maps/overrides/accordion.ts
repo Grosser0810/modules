@@ -1,4 +1,4 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const accordionStyles = (themePalette: IPalette) => ({
   styleOverrides: {
@@ -14,8 +14,8 @@ export const accordionStyles = (themePalette: IPalette) => ({
     //   region: {},
     // },
     root: {
-      '&.MuiAccordion-root:before': {
-        backgroundColor: 'transparent',
+      "&.MuiAccordion-root:before": {
+        backgroundColor: "transparent",
       },
     },
   },

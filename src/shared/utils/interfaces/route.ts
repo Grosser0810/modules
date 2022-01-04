@@ -1,4 +1,4 @@
-import { ComponentType, LazyExoticComponent } from 'react';
+import { ComponentType, LazyExoticComponent } from "react";
 
 export interface IMainRoute {
   path: string;

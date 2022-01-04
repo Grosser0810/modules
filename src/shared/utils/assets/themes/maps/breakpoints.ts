@@ -1,9 +1,9 @@
-import { Breakpoints } from '@mui/material/styles';
+import { Breakpoints } from "@mui/material/styles";
 
 export const breakpoints: Partial<
   { unit: string; step: number } & Breakpoints
 > = {
-  keys: ['xs', 'sm', 'md', 'lg', 'xl'],
+  keys: ["xs", "sm", "md", "lg", "xl"],
   values: {
     xs: 0,
     sm: 600,

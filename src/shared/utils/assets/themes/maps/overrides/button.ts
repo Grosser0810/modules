@@ -1,32 +1,32 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const buttonStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     containedPrimary: {
       backgroundColor: themePalette.primary.main,
-      boxShadow: 'none',
-      '&:hover': {
+      boxShadow: "none",
+      "&:hover": {
         backgroundColor: themePalette.primary.light,
-        boxShadow: 'none',
+        boxShadow: "none",
       },
     },
     outlinedPrimary: {
-      '&:hover': {
+      "&:hover": {
         backgroundColor: themePalette.primary.light,
       },
     },
     outlinedSecondary: {
-      '&:hover': {
+      "&:hover": {
         backgroundColor: themePalette.text.disabled,
       },
     },
     textPrimary: {
-      '&:hover': {
+      "&:hover": {
         backgroundColor: themePalette.primary.light,
       },
     },
     textSecondary: {
-      '&:hover': {
+      "&:hover": {
         backgroundColor: themePalette.text.disabled,
       },
     },

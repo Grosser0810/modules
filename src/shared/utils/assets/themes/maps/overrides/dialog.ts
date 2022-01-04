@@ -1,9 +1,9 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const dialogStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     paper: {
-      boxShadow: 'none',
+      boxShadow: "none",
     },
   },
 });

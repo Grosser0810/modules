@@ -1,4 +1,4 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const listItemStyles = (themePalette: IPalette) => ({
   styleOverrides: {

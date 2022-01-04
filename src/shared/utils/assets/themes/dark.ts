@@ -7,10 +7,10 @@ import {
   transitions,
   zIndex,
   dark,
-} from './maps';
-import { createTheme, Theme } from '@mui/material/styles';
-import { overrideMap } from './maps/overrides';
-import { responsiveFontSizes } from '@mui/material';
+} from "./maps";
+import { createTheme, Theme } from "@mui/material/styles";
+import { overrideMap } from "./maps/overrides";
+import { responsiveFontSizes } from "@mui/material";
 
 const darkTheme: Theme = responsiveFontSizes(
   createTheme({

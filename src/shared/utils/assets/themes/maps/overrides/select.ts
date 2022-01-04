@@ -1,11 +1,11 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const selectStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     outlined: {
-      '&.MuiInputBase-inputAdornedStart': {
-        marginLeft: '-3.5rem',
-        paddingLeft: '4rem',
+      "&.MuiInputBase-inputAdornedStart": {
+        marginLeft: "-3.5rem",
+        paddingLeft: "4rem",
       },
     },
   },

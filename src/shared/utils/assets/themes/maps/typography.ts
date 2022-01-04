@@ -1,4 +1,4 @@
-import { TypographyOptions } from '@mui/material/styles/createTypography';
+import { TypographyOptions } from "@mui/material/styles/createTypography";
 
 export const typography: TypographyOptions = {
   htmlFontSize: 10,
@@ -12,106 +12,106 @@ export const typography: TypographyOptions = {
   h1: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 600,
-    fontSize: '4.8rem',
+    fontSize: "4.8rem",
     lineHeight: 1.167,
-    letterSpacing: '-0.01562em',
+    letterSpacing: "-0.01562em",
   },
 
   h2: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 600,
-    fontSize: '2.4rem',
+    fontSize: "2.4rem",
     lineHeight: 1.2,
-    letterSpacing: '-0.00833em',
+    letterSpacing: "-0.00833em",
   },
 
   h3: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '2rem',
+    fontSize: "2rem",
     lineHeight: 1.167,
-    letterSpacing: '0em',
+    letterSpacing: "0em",
   },
 
   h4: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.8rem',
+    fontSize: "1.8rem",
     lineHeight: 1.235,
-    letterSpacing: '0.00735em',
+    letterSpacing: "0.00735em",
   },
 
   h5: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.6rem',
+    fontSize: "1.6rem",
     lineHeight: 1.334,
-    letterSpacing: '0em',
+    letterSpacing: "0em",
   },
 
   h6: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.6rem',
+    fontSize: "1.6rem",
     lineHeight: 1.6,
-    letterSpacing: '0.0075em',
+    letterSpacing: "0.0075em",
   },
 
   subtitle1: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 600,
-    fontSize: '1.6rem',
+    fontSize: "1.6rem",
     lineHeight: 1.75,
-    letterSpacing: '0.00938em',
+    letterSpacing: "0.00938em",
   },
 
   subtitle2: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 600,
-    fontSize: '1.4rem',
+    fontSize: "1.4rem",
     lineHeight: 1.57,
-    letterSpacing: '0.00714em',
+    letterSpacing: "0.00714em",
   },
 
   body1: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.6rem',
+    fontSize: "1.6rem",
     lineHeight: 1.5,
-    letterSpacing: '0.00938em',
+    letterSpacing: "0.00938em",
   },
 
   body2: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.4rem',
+    fontSize: "1.4rem",
     lineHeight: 1.43,
-    letterSpacing: '0.01071em',
+    letterSpacing: "0.01071em",
   },
 
   button: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.4rem',
+    fontSize: "1.4rem",
     lineHeight: 1.75,
-    letterSpacing: '0.02857em',
-    textTransform: 'none',
+    letterSpacing: "0.02857em",
+    textTransform: "none",
   },
 
   caption: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.2rem',
+    fontSize: "1.2rem",
     lineHeight: 1.66,
-    letterSpacing: '0.03333em',
+    letterSpacing: "0.03333em",
   },
 
   overline: {
     fontFamily: "'Source Sans Pro', sans-serif",
     fontWeight: 400,
-    fontSize: '1.2rem',
+    fontSize: "1.2rem",
     lineHeight: 2.66,
-    letterSpacing: '0.08333em',
-    textTransform: 'uppercase',
+    letterSpacing: "0.08333em",
+    textTransform: "uppercase",
   },
 };

@@ -1,4 +1,4 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const formLabelStyles = (themePalette: IPalette) => ({
   styleOverrides: {

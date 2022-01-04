@@ -1,5 +1,5 @@
-import { Palette, Theme } from '@mui/material/styles';
-import { Color } from '@mui/material';
+import { Palette, Theme } from "@mui/material/styles";
+import { Color } from "@mui/material";
 
 export interface IPalette extends Palette {
   blueGrey: Color;

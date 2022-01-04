@@ -1,5 +1,4 @@
-import { ZIndex } from '@mui/material/styles/zIndex';
-
+import { ZIndex } from "@mui/material/styles/zIndex";
 
 export const zIndex: Partial<ZIndex> = {
   mobileStepper: 1000,
@@ -9,4 +8,4 @@ export const zIndex: Partial<ZIndex> = {
   modal: 1300,
   snackbar: 1400,
   tooltip: 1500,
-}
+};

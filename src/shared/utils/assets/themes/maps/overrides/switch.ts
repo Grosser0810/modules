@@ -1,111 +1,111 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const switchStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     root: {
-      padding: '2px',
-      margin: '0px',
-      width: '4.2rem',
-      height: '2.6rem',
-      '&.MuiSwitch-sizeSmall .MuiSwitch-switchBase': {
+      padding: "2px",
+      margin: "0px",
+      width: "4.2rem",
+      height: "2.6rem",
+      "&.MuiSwitch-sizeSmall .MuiSwitch-switchBase": {
         padding: 4,
       },
-      '&.MuiSwitch-sizeSmall  .MuiSwitch-switchBase.Mui-checked': {
-        transform: 'translateX(1.2rem)',
+      "&.MuiSwitch-sizeSmall  .MuiSwitch-switchBase.Mui-checked": {
+        transform: "translateX(1.2rem)",
       },
-      '&:hover .MuiSwitch-track': {
+      "&:hover .MuiSwitch-track": {
         boxShadow: `0 0 0 2px rgba(34, 60, 80, 0.2)`,
       },
     },
     sizeSmall: {
       padding: 2,
-      '& .MuiSwitch-thumb': {
-        height: '1.2rem',
-        width: '1.2rem',
-        borderRadius: '4px',
-        backgroundColor: '#fff',
-        boxShadow: 'none',
+      "& .MuiSwitch-thumb": {
+        height: "1.2rem",
+        width: "1.2rem",
+        borderRadius: "4px",
+        backgroundColor: "#fff",
+        boxShadow: "none",
       },
     },
     switchBase: {
       padding: 5,
-      '&:hover': {
-        backgroundColor: 'transparent',
+      "&:hover": {
+        backgroundColor: "transparent",
       },
-      '&.Mui-checked': {
-        transform: 'translateX(1.6rem)',
+      "&.Mui-checked": {
+        transform: "translateX(1.6rem)",
       },
     },
     track: {
-      height: '2rem',
-      width: '3.6rem',
-      borderRadius: '1rem',
+      height: "2rem",
+      width: "3.6rem",
+      borderRadius: "1rem",
       backgroundColor: themePalette.action.disabledBackground,
-      '&': {
-        position: 'relative',
+      "&": {
+        position: "relative",
       },
-      '&::before': {
+      "&::before": {
         content: '""',
-        position: 'absolute',
-        top: '50%',
+        position: "absolute",
+        top: "50%",
         left: 7,
         background: themePalette.secondary.contrastText,
         width: 1,
         height: 7,
         color: themePalette.secondary.contrastText,
-        transform: 'translateY(-50%)',
+        transform: "translateY(-50%)",
       },
-      '&::after': {
+      "&::after": {
         content: '""',
-        position: 'absolute',
-        top: '50%',
+        position: "absolute",
+        top: "50%",
         right: 4,
         width: 6,
         height: 6,
         border: `1px solid #fff`,
-        borderRadius: '100%',
-        transform: 'translateY(-50%)',
+        borderRadius: "100%",
+        transform: "translateY(-50%)",
       },
-      '.MuiSwitch-sizeSmall &::after': {
+      ".MuiSwitch-sizeSmall &::after": {
         content: '""',
-        position: 'absolute',
-        top: '50%',
+        position: "absolute",
+        top: "50%",
         right: 4,
         width: 4,
         height: 4,
         border: `1px solid #fff`,
-        borderRadius: '100%',
-        transform: 'translateY(-50%)',
+        borderRadius: "100%",
+        transform: "translateY(-50%)",
       },
-      '.MuiSwitch-sizeSmall &': { height: '1.6rem', width: '2.8rem' },
-      ':not(.Mui-checked).MuiSwitch-colorPrimary + &': {
+      ".MuiSwitch-sizeSmall &": { height: "1.6rem", width: "2.8rem" },
+      ":not(.Mui-checked).MuiSwitch-colorPrimary + &": {
         opacity: 1.0,
         // backgroundColor: `${themePalette?.action?.disabledBackground}`,
         backgroundColor: themePalette.action.disabledBackground,
       },
-      '.Mui-checked.MuiSwitch-colorPrimary + &': {
+      ".Mui-checked.MuiSwitch-colorPrimary + &": {
         opacity: 1.0,
         backgroundColor: themePalette.primary.main,
       },
-      '.Mui-checked.MuiSwitch-colorSecondary + &': {
+      ".Mui-checked.MuiSwitch-colorSecondary + &": {
         opacity: 1.0,
         backgroundColor: themePalette.primary.dark,
       },
-      ':not(.Mui-checked).MuiSwitch-colorSecondary + &': {
+      ":not(.Mui-checked).MuiSwitch-colorSecondary + &": {
         opacity: 1.0,
         backgroundColor: themePalette.action.disabledBackground,
       },
-      '.Mui-disabled + &&': {
+      ".Mui-disabled + &&": {
         backgroundColor: themePalette.action.disabledBackground,
       },
     },
     thumb: {
       padding: 0,
-      height: '1.4rem',
-      width: '1.4rem',
-      borderRadius: '50%',
-      backgroundColor: '#fff',
-      boxShadow: 'none',
+      height: "1.4rem",
+      width: "1.4rem",
+      borderRadius: "50%",
+      backgroundColor: "#fff",
+      boxShadow: "none",
     },
   },
 });

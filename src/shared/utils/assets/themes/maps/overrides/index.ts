@@ -1,17 +1,17 @@
-import { buttonStyles } from './button';
-import { menuStyles } from './menu';
-import { menuItemStyles } from './menuItem';
-import { listItemStyles } from './listItem';
-import { selectStyles } from './select';
-import { switchStyles } from './switch';
-import { tooltipStyles } from './tooltip';
-import { formLabelStyles } from './formLabel';
-import { typographyStyles } from './typography';
-import { backdropStyles } from './backdrop';
-import { paperStyles } from './paper';
-import { dialogStyles } from './dialog';
-import { accordionStyles } from './accordion';
-import { IPalette } from '../../../../interfaces';
+import { buttonStyles } from "./button";
+import { menuStyles } from "./menu";
+import { menuItemStyles } from "./menuItem";
+import { listItemStyles } from "./listItem";
+import { selectStyles } from "./select";
+import { switchStyles } from "./switch";
+import { tooltipStyles } from "./tooltip";
+import { formLabelStyles } from "./formLabel";
+import { typographyStyles } from "./typography";
+import { backdropStyles } from "./backdrop";
+import { paperStyles } from "./paper";
+import { dialogStyles } from "./dialog";
+import { accordionStyles } from "./accordion";
+import { IPalette } from "../../../../interfaces";
 
 export const overrideMap = (themePalette: IPalette) => ({
   MuiButton: buttonStyles(themePalette),

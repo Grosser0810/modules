@@ -1,25 +1,25 @@
-import { IPalette } from '../../../../interfaces';
+import { IPalette } from "../../../../interfaces";
 
 export const menuItemStyles = (themePalette: IPalette) => ({
   styleOverrides: {
     root: {
-      '&.Mui-selected': {
-        background: '#fff',
-        '&:focus': {
-          background: '#fff',
+      "&.Mui-selected": {
+        background: "#fff",
+        "&:focus": {
+          background: "#fff",
         },
-        '&:hover': {
+        "&:hover": {
           backgroundColor: themePalette.action.hover,
         },
       },
-      '&:focus': {
-        backgroundColor: '#fff',
+      "&:focus": {
+        backgroundColor: "#fff",
       },
-      '&:hover': {
+      "&:hover": {
         backgroundColor: themePalette.action.hover,
       },
-      boxShadow: 'none',
-      height: '3.6rem',
+      boxShadow: "none",
+      height: "3.6rem",
     },
   },
 });

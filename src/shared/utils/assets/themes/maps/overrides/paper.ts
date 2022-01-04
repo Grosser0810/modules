@@ -1,5 +1,5 @@
-import { shadows } from '../shadows';
-import { IPalette } from '../../../../interfaces';
+import { shadows } from "../shadows";
+import { IPalette } from "../../../../interfaces";
 
 export const paperStyles = (themePalette: IPalette) => ({
   styleOverrides: {

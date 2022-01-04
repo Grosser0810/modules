@@ -1,21 +1,21 @@
-import React, { FC } from 'react';
+import React from 'react';
+import { Box } from '@mui/material';
+// eslint-disable-next-line import/no-unresolved
 import { useStyles } from './auth.styles';
-import { Box, Typography } from '@mui/material';
 
-
-const Auth: FC = () => {
+function Auth() {
   const classes = useStyles();
 
   return (
     <Box className={classes.wrapper}>
       <div>
-        <input type="text"/>
+        <input type="text" />
       </div>
       <div>
-        <input type="text"/>
+        <input type="text" />
       </div>
     </Box>
-  )
+  );
 }
 
 export default Auth;
