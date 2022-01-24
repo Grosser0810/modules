@@ -9,10 +9,10 @@ function Auth() {
   return (
     <Box className={classes.wrapper}>
       <div>
-        <input type="text" />
+        <input type='text' />
       </div>
       <div>
-        <input type="text" />
+        <input type='text' />
       </div>
     </Box>
   );
