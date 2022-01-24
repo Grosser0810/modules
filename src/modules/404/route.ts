@@ -1,8 +1,8 @@
-import { IMainRoute } from '../../shared/utils/interfaces/route';
-import { lazy } from 'react';
+import { IMainRoute } from "../../shared/utils";
+import { lazy } from "react";
 
-const lazy404 = lazy(() => import('./404.module'));
+const lazy404 = lazy(() => import("./404.module"));
 
 export const notFoundRoutes: IMainRoute[] = [
-  { path: '*', element: lazy404, sidebar: false, subRoutes: [] }
+  { path: "*", element: lazy404, sidebar: false, subRoutes: [] },
 ];

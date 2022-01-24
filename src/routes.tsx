@@ -1,24 +1,29 @@
-import React, { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { IMainRoute } from './shared/utils/interfaces/route';
+import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import { IMainRoute } from "./shared/utils/interfaces/route";
 
-const mainRoutes = import('./modules');
+const mainRoutes = import("./modules");
 
 type TRoutes = {
   [key: string]: IMainRoute[];
-}
+};
 
 export const MyRoutes = () => {
   const [routes, setRoutes] = useState<IMainRoute[]>([]);
 
   useEffect(() => {
     (async () => {
-      const routes: TRoutes = { ...await mainRoutes.then(routes => routes) };
+      const routes: TRoutes = {
+        ...(await mainRoutes.then((routes) => routes)),
+      };
       if (Object.keys(routes).length) {
-        const reducedRoutes: IMainRoute[] = Object.keys(routes).reduce((acc: IMainRoute[], cur) => {
-          return [...acc, routes[cur]].flat();
-        }, []);
-        return setRoutes(reducedRoutes)
+        const reducedRoutes: IMainRoute[] = Object.keys(routes).reduce(
+          (acc: IMainRoute[], cur) => {
+            return [...acc, routes[cur]].flat();
+          },
+          []
+        );
+        return setRoutes(reducedRoutes);
       }
       return undefined;
     })();
@@ -32,5 +37,5 @@ export const MyRoutes = () => {
         ))}
       </Routes>
     </div>
-  )
-}
+  );
+};

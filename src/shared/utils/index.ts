@@ -1,1 +1,2 @@
-export const mock = {};
+export * from "./interfaces";
+export * from "./assets";
